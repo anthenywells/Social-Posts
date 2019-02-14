@@ -1,0 +1,7 @@
+<form>
+  <p>Title</p>
+  <input type="text" ng-model="$ctrl.title" placeholder="Post title" expand>
+  <p>Thought</p>
+  <textarea type="text" ng-model="$ctrl.thought" rows="7" expand></textarea>
+  <a href="" ng-click="$ctrl.formToggle(); $ctrl.onSubmit({ title:$ctrl.title , thought:$ctrl.thought });" >Add Post</a>
+</form>

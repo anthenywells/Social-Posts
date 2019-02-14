@@ -1,0 +1,106 @@
+body {
+  margin: 0 auto;
+  background: #f3f1f7;
+  font-family: 'Dosis', sans-serif;
+}
+main {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h3 {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 1.5em;
+  color:rgb(3, 169, 244);
+}
+
+.add {
+  width: calc(80% - 1em);
+  max-width: 550px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin:5px;
+  padding: .5em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.post {
+  width: calc(80% - 4em);
+  max-width: 550px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  
+}
+
+post {
+  display:flex;
+  justify-content: space-between;
+  margin:1em 2em;
+  border-bottom: 1px solid #ccc;
+}
+
+post p:nth-of-type(1) {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+post p {
+  margin: 2px;
+}
+
+post button {
+  border:none;
+  border-radius: 6px;
+  font-size: 1.3em;
+}
+
+.hide {
+  display: none;
+}
+.postform {
+  z-index: 99;
+  position: fixed;
+  margin-top: 12.5%;
+  width:50%;
+  background-color:#B1DDEA;
+}
+
+
+postform form {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+
+postform p {
+  display: flex;
+  align-self: flex-start;
+  margin:15px 0 0 9%;
+}
+
+postform input, postform textarea, postform a {
+  width: 80%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin:5px;
+  padding: .5em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+postform a {
+  display: flex;
+  color:#000;
+  background-color: #fff;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,18 @@
+<main>
+  <h3>My Thots</h3>
+  <!-- button runs formToggle and toggles hide class on postform -->
+  <button class="add" ng-click="$ctrl.formToggle();">New Thot</button>
+
+  <section class="post">
+    <!-- binding removeTweet and onSubmit functions to post component -->
+    <!-- repeats post HTML for each property in tweets array -->
+    <post post="update" remove-tweet="$ctrl.removeTweet(index);" 
+          ng-repeat="update in $ctrl.tweets track by $index"></post>
+  </section>
+
+  <!-- class hide is on postform if formBool is equal to true -->
+  <section class="postform" ng-class="{ hide: $ctrl.formBool }">
+    <!-- binding onSubmit and formToggle functions to postform-->
+    <postform on-submit="$ctrl.onSubmit(title,thought);" form-toggle="$ctrl.formToggle();"></postform>
+  </section>
+</main>
